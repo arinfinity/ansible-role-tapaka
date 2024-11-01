@@ -1,0 +1,21 @@
+---
+- name: Install NGINX
+  apt:
+    name: nginx
+    state: present
+    update_cache: yes
+
+- name: Start NGINX service
+  service:
+    name: nginx
+    state: started
+    enabled: true
+
+- name: Create a directory
+  file:
+    path: /var/www/example_directory
+    state: directory
+    owner: www-data
+    group: www-data
+    mode: '0755'
+
