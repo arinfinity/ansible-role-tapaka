@@ -47,4 +47,20 @@ galaxy_info:
 
 dependencies: []
   # List your role dependencies here, one per line. Be sure to remove the '[]' above,
+
+
+
+galaxy_info:
+  author: "akshaya"
+  description: "Role to install nginx, copy files, and configure permissions"
+  company: "akshayasoft"
+  license: "MIT"
+  min_ansible_version: "2.9"
+  platforms:
+    - name: "Ubuntu"
+      versions:
+        - "20.04"
+        - "22.04"
+
+dependencies: []
   # if you add dependencies to this list.
